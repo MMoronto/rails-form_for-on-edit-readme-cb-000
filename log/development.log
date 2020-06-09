@@ -787,3 +787,13 @@ Redirected to http://67.205.130.239:60507/posts/5
 Completed 302 Found in 25ms (ActiveRecord: 6.4ms)
 
 
+Started GET "/posts/5" for 76.124.168.60 at 2020-06-09 14:29:23 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 236ms (Views: 218.7ms | ActiveRecord: 0.7ms)
+
+
